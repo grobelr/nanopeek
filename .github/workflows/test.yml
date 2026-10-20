@@ -1,0 +1,30 @@
+name: test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.2.0
+      - name: Install
+        run: |
+          uv venv --python ${{ matrix.python }}
+          uv pip install -e . pytest pytest-asyncio
+      - name: Test scripts
+        run: |
+          for t in tests/*_test.py; do
+            echo "::group::$t"
+            .venv/bin/python "$t"
+            echo "::endgroup::"
+          done
+      - name: Accepted arnx tests
+        run: .venv/bin/python -m pytest -o asyncio_mode=auto tests/arnx
