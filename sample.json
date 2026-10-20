@@ -1,0 +1,12 @@
+{
+  "name": "nanopeek",
+  "version": "0.1.0",
+  "nano-style": true,
+  "preview": {
+    "markdown": "rendered document",
+    "json": "pretty-printed validator"
+  },
+  "themes": ["textual-dark", "textual-light", "nord", "dracula"],
+  "keys": {"exit": "^X", "save": "^S", "where_is": "^W", "preview": "^P"},
+  "unicode_ok": "café — ✓"
+}

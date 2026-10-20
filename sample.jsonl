@@ -1,0 +1,4 @@
+{"event": "open", "file": "sample.jsonl", "ts": 1760000001}
+{"event": "theme", "name": "nord", "ts": 1760000005}
+
+{"event": "save", "bytes": 432, "ok": true, "ts": 1760000042}

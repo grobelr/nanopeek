@@ -1,0 +1,9 @@
+# Docker Compose example — comments remain visible in the preview.
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    environment:
+      APP_NAME: nanopeek
+    restart: unless-stopped

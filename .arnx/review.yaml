@@ -1,0 +1,30 @@
+version: 1
+projects:
+  nanopeek:
+    root: .
+    language: python
+    runner: pytest
+    image: python:3.12
+    install:
+      - pip install -e . pytest pytest-asyncio hypothesis
+    test_command: python -m pytest -o "python_functions=main test_*" -o asyncio_mode=auto {targets}
+    tests_dir: tests
+    owns:
+      - /nanopeek.py
+      - /tests/
+      - /pyproject.toml
+      - /sample*
+    uses: []
+    notes:
+      - Existing tests are scripts whose async main() is collected via python_functions=main with asyncio auto mode.
+uncovered:
+  - path: /docs/
+    reason: documentation
+  - path: /scripts/
+    reason: screenshot helper script
+approved:
+  by: grobelr
+  at: 2026-10-20T01:37:18+00:00
+  sha256: 1f32dbabc45f1a928f01f55506b7cdeda8900af6d527c787f9c30dffcbecf269
+  projects:
+    nanopeek: 59a1f2d9dd45fcecc3d6a6a43211088d90c4e279564b3e2f0ffc2c2da090065f

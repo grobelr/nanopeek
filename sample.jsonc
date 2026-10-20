@@ -1,0 +1,14 @@
+{
+  // nanopeek understands JSONC: comments and trailing commas
+  "editor": {
+    "theme": "nord",
+    "font_family": "monospace", /* block comments too */
+    "ligatures": false,
+  },
+  "preview": {
+    "modes": ["split", "preview", "edit",],
+    "debounce_ms": 200,
+  },
+  // strings keep their slashes:
+  "docs": "https://example.com/docs",
+}

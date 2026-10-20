@@ -1,0 +1,9 @@
+# TOML example — formatting remains intact in the preview.
+[app]
+name = "nanopeek"
+version = "0.1.0"
+
+[editor]
+theme = "nord"
+preview = true
+formats = ["markdown", "json", "yaml", "toml", "dockerfile"]
