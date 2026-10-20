@@ -64,11 +64,16 @@ YAML and TOML also show live syntax errors.
 
 ## Install
 
-Requires Python 3.9+.
+Requires Python 3.9+. nanopeek is on [PyPI](https://pypi.org/project/nanopeek/):
 
-    pipx install .
+    pipx install nanopeek
 
-or, for development:
+or with [uv](https://docs.astral.sh/uv/):
+
+    uv tool install nanopeek    # install the command
+    uvx nanopeek README.md      # or run it once without installing
+
+`pip install nanopeek` works too. To install from a clone, for development:
 
     pip install -e .
 
