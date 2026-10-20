@@ -44,7 +44,7 @@ from textual.filter import NoColor
 from textual.screen import ModalScreen
 from textual.widgets import Button, Input, Markdown, Static, TextArea
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 DEBOUNCE = 0.2  # seconds of idle typing before the preview re-renders
 COPY_NOTIFY_DEBOUNCE = 0.5  # wait for the mouse to settle before "Copied" toast
