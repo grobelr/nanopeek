@@ -1,20 +1,20 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "nanopeek"
-version = "0.1.0"
+dynamic = ["version"]
 description = "nano-style terminal editor with live Markdown, JSON, YAML, TOML and Dockerfile previews"
 readme = "README.md"
 requires-python = ">=3.9"
-license = { text = "MIT" }
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [{ name = "grobelr" }]
 keywords = ["markdown", "editor", "nano", "tui", "terminal", "preview"]
 classifiers = [
     "Environment :: Console",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Topic :: Text Editors",
 ]
@@ -37,3 +37,6 @@ nanopeek = "nanopeek:main"
 
 [tool.setuptools]
 py-modules = ["nanopeek"]
+
+[tool.setuptools.dynamic]
+version = { attr = "nanopeek.__version__" }

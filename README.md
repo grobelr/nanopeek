@@ -7,7 +7,7 @@ for `.json` files it becomes a live **JSON formatter and validator**.
 YAML, TOML, and Dockerfiles get a **syntax-highlighted source preview**;
 YAML and TOML also show live syntax errors.
 
-![nanopeek screenshot](docs/screenshot.png)
+![nanopeek screenshot](https://raw.githubusercontent.com/grobelr/nanopeek/main/docs/screenshot.png)
 
 ## What it does
 
@@ -26,7 +26,7 @@ YAML and TOML also show live syntax errors.
   commented `.json` files get the same leniency. Broken input shows the
   exact line and column.
 
-![JSON formatter screenshot](docs/screenshot-json.png)
+![JSON formatter screenshot](https://raw.githubusercontent.com/grobelr/nanopeek/main/docs/screenshot-json.png)
 - **Configuration viewers** — `.yaml`/`.yml` (including Docker Compose)
   and `.toml` files display highlighted source with live syntax validation.
   Comments, ordering, spacing, and YAML document separators stay intact.
@@ -138,4 +138,4 @@ Regenerate the screenshot:
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](https://github.com/grobelr/nanopeek/blob/main/LICENSE).
