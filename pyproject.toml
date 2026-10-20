@@ -7,7 +7,7 @@ name = "nanopeek"
 dynamic = ["version"]
 description = "nano-style terminal editor with live Markdown, JSON, YAML, TOML and Dockerfile previews"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = "MIT"
 license-files = ["LICENSE"]
 authors = [{ name = "grobelr" }]

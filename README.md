@@ -64,7 +64,7 @@ YAML and TOML also show live syntax errors.
 
 ## Install
 
-Requires Python 3.9+. nanopeek is on [PyPI](https://pypi.org/project/nanopeek/):
+Requires Python 3.10+. nanopeek is on [PyPI](https://pypi.org/project/nanopeek/):
 
     pipx install nanopeek
 

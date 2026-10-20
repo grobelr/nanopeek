@@ -27,7 +27,7 @@ import yaml
 
 try:
     import tomllib
-except ModuleNotFoundError:  # Python 3.9 and 3.10
+except ModuleNotFoundError:  # Python 3.10
     import tomli as tomllib
 
 try:  # textual dependency; used for source-line -> heading mapping
@@ -284,7 +284,7 @@ class HelpScreen(ModalScreen[None]):
             yield Static(HELP_TEXT, id="help-text", classes="dialog")
 
 
-class ConfirmExitScreen(ModalScreen[Optional[str]]):  # not `str | None`: bases run on 3.9
+class ConfirmExitScreen(ModalScreen[Optional[str]]):
     """nano's "Save modified buffer?" — returns 'save', 'discard' or None."""
 
     BINDINGS = [
